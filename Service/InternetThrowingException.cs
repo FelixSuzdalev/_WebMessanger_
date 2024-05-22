@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Service
+{
+    internal class InternetThrowingException : Exception
+    {
+        public readonly uint Code;
+        public InternetThrowingException(uint code)
+        {
+            Code= code;
+        }
+    }
+}
